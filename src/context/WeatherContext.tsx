@@ -54,7 +54,7 @@ export const WeatherProvider: FC = ({ children }) => {
   useEffect(() => {
     const fetchData = async () => {
       const response = await Axios.get(
-        `https://www.metaweather.com/api/location/${woeid}`,
+        `https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/${woeid}`,
       );
       setData(response.data);
     };

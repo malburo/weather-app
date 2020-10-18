@@ -98,7 +98,7 @@ export const SideBar: FC = () => {
     try {
       setIsSearching(true);
       const response = await Axios.get(
-        `https://www.metaweather.com/api/location/search/?query=${value}`,
+        `https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/search/?query=${value}`,
       );
       setIsSearching(false);
       setCities(response.data.splice(0, 10));
