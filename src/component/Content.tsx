@@ -13,7 +13,7 @@ const Wrapper = styled.div`
   background-color: #100e1d;
   width: 100%;
   min-height: 100vh;
-  padding: 50px 100px;
+  padding: 60px 100px;
   z-index: 1;
 `;
 const CardList = styled.div`
